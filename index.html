@@ -11,8 +11,6 @@
 
 
     <link rel="stylesheet" href="css/glide.core.min.css">
-    <!-- <link rel="stylesheet" href="css/glide.theme.min.css"> -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
 </head>
 
@@ -86,63 +84,8 @@
     <!-- projects section -->
     <section id="projects" class=" bg-secondary">
         <h1 class="container">Projects</h1>
-
+        <br>
         <h2 class="container">Coming Soon...</h2>
-
-        <!-- <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <article>
-                        <h2>Project 1</h2>
-                        <div class="links">
-                            <a href="#">This is a link</a>
-                        </div>
-                        <div class="article-image"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias adipisci, fugiat eveniet
-                            tempora repellendus aliquam, vitae corrupti consequuntur ducimus aperiam exercitationem
-                            quisquam! Dolor suscipit sit labore fuga? Asperiores, doloribus rerum?</p>
-                    </article>
-
-                    <article>
-                        <h2>Project 2</h2>
-                        <div class="links">
-                            <a href="#">This is a link</a>
-                        </div>
-                        <div class="article-image"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias adipisci, fugiat eveniet
-                            tempora repellendus aliquam, vitae corrupti consequuntur ducimus aperiam exercitationem
-                            quisquam! Dolor suscipit sit labore fuga? Asperiores, doloribus rerum?</p>
-                    </article>
-
-                    <article>
-                        <h2>Project 3</h2>
-                        <div class="links">
-                            <a href="#">This is a link</a>
-                        </div>
-                        <div class="article-image"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias adipisci, fugiat eveniet
-                            tempora repellendus aliquam, vitae corrupti consequuntur ducimus aperiam exercitationem
-                            quisquam! Dolor suscipit sit labore fuga? Asperiores, doloribus rerum?</p>
-                    </article>
-
-                    <article>
-                        <h2>Project 4</h2>
-                        <div class="links">
-                            <a href="#">This is a link</a>
-                        </div>
-                        <div class="article-image"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias adipisci, fugiat eveniet
-                            tempora repellendus aliquam, vitae corrupti consequuntur ducimus aperiam exercitationem
-                            quisquam! Dolor suscipit sit labore fuga? Asperiores, doloribus rerum?</p>
-                    </article>
-                </ul>
-            </div>
-
-            <div class="glide__arrows container" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left btn" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right btn" data-glide-dir=">">next</button>
-            </div>
-        </div> -->
 
     </section>
 
@@ -155,7 +98,7 @@
                     <img src="headshot_square.png" alt="headshot image">
                 </div>
                 <p>
-                    Coming soon...
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sapiente nam perferendis dolorum odit, asperiores reiciendis fugit qui voluptatibus ullam numquam doloribus! Rem, sit excepturi deleniti quam aliquam velit eos voluptatibus quis nemo tempora at facere a porro officia hic fugit illo! Quam nulla doloremque cupiditate corporis vel ipsam earum, odio autem commodi culpa dolores dignissimos, itaque ratione nihil quisquam.
                 </p>
             </div>
             <a href="#contact" style="margin-top: 1em;" class="btn">Contact me</a>
@@ -243,12 +186,12 @@
             '#3498db', // blue
             '#9b59b6', // purple
             '#e74c3c', // red
-            '#f1c40f', // yelleow
+            '#f1c40f', // yellow
             '#1abc9c', // turquoise
         ]
 
         function choose(choices) {
-            var index = Math.floor(Math.random() * choices.length);
+            let index = Math.floor(Math.random() * choices.length);
             return choices[index];
         }
 
@@ -256,8 +199,8 @@
 
         // contact functionality
         function sendEmail() {
-            var contactSubject = document.getElementById('contactSubject');
-            var contactMessage = document.getElementById('contactMessage');
+            let contactSubject = document.getElementById('contactSubject');
+            let contactMessage = document.getElementById('contactMessage');
 
             // opening the email app to send the contents of the message
             window.open(`mailto:jclong98@gmail.com?subject=${contactSubject.value}&body=${contactMessage.value}`)
@@ -266,16 +209,6 @@
             contactSubject.value = "";
             contactMessage.value = "";
         }
-
-        // use glide.js for the carrousel
-        var glide = new Glide('.glide', {
-            peek: {
-                before: 100,
-                after: 100
-            }
-        }).mount()
-
-
     </script>
 
 </body>
